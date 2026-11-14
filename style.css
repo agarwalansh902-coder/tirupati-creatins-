@@ -1,0 +1,217 @@
+/* tirupati creation - responsive fashion website */
+:root { 
+	--link:#201916;
+	--muted:#71645c;
+	--gold:#618a49;
+	--gold dark: #8d6932;
+	--cream:#f8f4ed;
+	--white:#fff;
+	--line:#e9dfd;
+
+}
+#(box-sizing: border-box ;)
+html(scroll-behavior: smooth  ;)
+body {
+	margin: 0px;
+	color: var(--ink);
+	background: var(--white);
+	font-family: segoe vt;arial 
+	 line-height:1.7;
+	}
+	a{
+		color: inherit;text-decmail
+	}
+	.site header{
+		position: sticky;
+		top: 0px;
+		z-index: 0px ;
+		background: rgba(255, 255, 255, .96);
+		border-bottom: 1px solid var(--line);
+		backdrop-filter: blur(12px);
+
+	} 
+	.navbar{
+		width: min(1180px, 90%);
+		min-height: 78px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+	}
+	.logo,.footer-logo{
+		font-family: georgia,serif;
+		font-size: 21px;
+		font-weight: 700px;
+		letter-spacing: 2px;
+
+	}
+	.logo span,.footer-logo span{color: var(--gold-dark);}
+	.nav-link{
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.nav-links a{font-size: 14px;font-weight: 600;transition: color.2s;}
+	.nav-links a:hover{color: var(--gold-dark);}
+	.nav-links.nav-cta{
+		padding: 11px 20px;
+		color: white;
+		background: var(--link);
+		border-radius: 2px;
+
+
+	}
+	.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+}
+.hero {
+  min-height: 590px;
+  padding: 100px max(7%, calc((100% - 1180px)/2));
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(25,19,16,.86), rgba(25,19,16,.45)),
+    url("6.png") center 42% / cover no-repeat,
+    #49372b;
+  color: white;
+}
+.hero-content { max-width: 650px; }
+.eyebrow {
+  margin: 0 0 13px;
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.hero .eyebrow { color: #e4c48f; }
+.hero h1 {
+  margin: 0 0 18px;
+  font: 500 clamp(42px, 6vw, 72px)/1.08 Georgia, serif;
+}
+.hero h1 span, .about-copy h2 span { color: #d8b77d; }
+.hero-copy { max-width: 560px; color: #f1e9df; font-size: 16px; }
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 25px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  transition: .2s ease;
+}
+.button-gold { background: var(--gold); color: #fff; }
+.button-gold:hover { background: var(--gold-dark); transform: translateY(-2px); }
+.hero-note {
+  position: absolute;
+  right: 6%;
+  bottom: 28px;
+  display: flex;
+  gap: 20px;
+  color: #f1dfc2;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.section { padding: 85px 5%; }
+.section-heading { max-width: 700px; margin: 0 auto 42px; text-align: center; }
+.section-heading h2, .about-copy h2, .contact-copy h2 {
+  margin: 0 0 13px;
+  font: 500 clamp(32px, 4vw, 46px)/1.2 Georgia, serif;
+}
+.section-heading > p:last-child { color: var(--muted); }
+.collection-grid {
+  width: min(1180px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.collection-card {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+.collection-card:hover { transform: translateY(-5px); box-shadow: 0 14px 30px #20191612; }
+.collection-card img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+.card-copy { padding: 23px 22px 26px; }
+.card-kicker { color: var(--gold-dark); font-size: 10px; font-weight: 800; letter-spacing: 2px; }
+.card-copy h3 { margin: 5px 0 8px; font: 24px Georgia, serif; }
+.card-copy p:not(.card-kicker) { color: var(--muted); font-size: 14px; }
+.card-copy a, .text-link { color: var(--gold-dark); font-size: 13px; font-weight: 800; }
+.card-copy a span, .text-link span { padding-left: 7px; }
+.about-section {
+  padding: 85px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 7%;
+  background: var(--cream);
+}
+.about-image img { width: 100%; max-height: 510px; object-fit: cover; display: block; }
+.about-copy { max-width: 520px; }
+.about-copy h2 span { color: var(--gold-dark); }
+.about-copy p:not(.eyebrow) { color: var(--muted); }
+.shop-section { padding: 75px 5%; background: #fff; }
+.small-note { font-size: 11px !important; }
+.contact-section {
+  padding: 75px 8%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  background: #f5efe5;
+}
+.contact-copy p:not(.eyebrow), .contact-details { color: var(--muted); }
+.contact-details p { margin: 0 0 18px; }
+.contact-details strong { color: var(--ink); }
+.button-outline { border: 1px solid var(--gold-dark); color: var(--gold-dark); }
+.button-outline:hover { background: var(--gold-dark); color: white; }
+.footer { padding: 38px 5%; text-align: center; background: #211a16; color: #eee4d8; }
+.footer-logo { color: white; }
+.footer p { margin: 8px 0; color: #c9b9a6; font-size: 13px; }
+.footer .copyright { margin-top: 22px; font-size: 11px; color: #9f9184; }
+
+@media (max-width: 760px) {
+  .navbar { min-height: 68px; }
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    padding: 18px 5% 24px;
+    background: white;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .nav-links.is-open { display: flex; }
+  .hero { min-height: 530px; padding: 75px 7%; }
+  .hero-note { left: 7%; right: auto; gap: 12px; }
+  .collection-grid { grid-template-columns: 1fr; max-width: 470px; }
+  .collection-card img { height: 360px; }
+  .about-section, .contact-section { grid-template-columns: 1fr; padding: 60px 7%; gap: 30px; }
+  .about-image { order: 2; }
+  .section { padding: 65px 6%; }
+}
+
+
+
+
+	
