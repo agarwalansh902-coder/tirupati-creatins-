@@ -1,37 +1,25 @@
-# Tirupati Creations — Website Project
+# Tirupati Creations — Premium Women's Ethnic Wear Website
 
-A responsive, luxury-inspired website for Tirupati Creations, built with HTML, CSS and vanilla JavaScript. The design uses an espresso-black, champagne-gold and warm-ivory palette.
+Responsive boutique website built with HTML, CSS and vanilla JavaScript.
 
-## Project files
-
-- `index.html` — website content and page structure
-- `style.css` — responsive layout, colours and typography
-- `script.js` — mobile navigation and automatic copyright year
-- `1.jpeg`, `3.jpeg`, `4.png`, `5.png`, `6.png` — website photographs
+## Included files
+- `index.html` — complete website
+- `style.css` — premium responsive styling
+- `script.js` — mobile navigation and automatic year
+- `1.jpeg`, `3.jpeg`, `4.png`, `5.png`, `6.png` — supplied website photographs
 
 ## Features
-
-- Responsive desktop and mobile layout
-- Premium boutique-inspired styling
-- Women's wear collections and brand story sections
-- Wholesale enquiry section
-- WhatsApp enquiry links and floating WhatsApp contact button
-- Mobile navigation menu
-- No installation or build tools required
-
-## WhatsApp
-
-All enquiry buttons are set to **+91 96362 56667**. To change this later, replace `919636256667` in the WhatsApp links in `index.html` with the new country code and number (digits only).
+- Espresso-black, champagne-gold and warm-ivory visual theme
+- Responsive desktop and mobile layouts
+- Hero, collection, brand story, wholesale and contact sections
+- All five photographs linked in the page
+- WhatsApp enquiry links for both contacts: +91 96362 56667 and +91 82907 61008
+- Floating WhatsApp action and mobile navigation
 
 ## Run locally
+Download the repository and open `index.html`. Keep all five images, `style.css`, and `script.js` in the same root folder.
 
-Download or clone this repository and open `index.html` in a browser. Keep all five image files in the same folder as `index.html`.
+## GitHub Pages
+Open **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then save. GitHub will show the public website URL after deployment.
 
-## Publish with GitHub Pages
-
-1. Open this repository's **Settings → Pages**.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Choose branch **main** and folder **/(root)**, then save.
-4. Wait for GitHub Pages to finish publishing. The website URL will appear in the Pages section.
-
-This project was prepared as a college website assignment.
+Prepared as a college website assignment for Tirupati Creations.
